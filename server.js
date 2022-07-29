@@ -5,7 +5,7 @@ const { createServer } = require("http");
 const { Server } = require("socket.io");
 const server = createServer(app);
 const io = new Server(server, {
-  cors: "http://localhost:5000",
+  cors: "https://card-game-s.herokuapp.com",
 });
 
 const users = [];
